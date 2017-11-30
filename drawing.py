@@ -17,4 +17,33 @@ def draw_square():
        
     window.exitonclick()
 
+def draw_circle():
+    window = turtle.Screen()
+    window.bgcolor("yellow")
+
+    angie = turtle.Turtle()
+    angie.shape("arrow")
+    angie.color("red")
+    angie.circle(100)
+
+    window.exitonclick()
+
+def draw_triangle():
+    window = turtle.Screen()
+    window.bgcolor("yellow")
+
+    anne = turtle.Turtle()
+    anne.shape("arrow")
+    anne.color("red")
+    n = 0
+
+    while n <= 2:
+        anne.forward(100)
+        anne.right(120)
+        n += 1
+
+    window.exitonclick()
+    
 draw_square()
+#draw_circle()
+#draw_triangle()
